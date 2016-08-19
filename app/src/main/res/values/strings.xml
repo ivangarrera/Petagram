@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyLittlePets</string>
+    <string name="nombre_mascota">Nela</string>
+    <string name="numberOfLikes">5</string>
+</resources>
