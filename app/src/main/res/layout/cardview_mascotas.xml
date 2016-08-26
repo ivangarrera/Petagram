@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,59 +8,58 @@
     app:cardCornerRadius="@dimen/cardCornerRadius"
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <include
-            android:id="@+id/myActionBar"
-            layout="@layout/actionbar"
-            >
-        </include>
-        <ImageView
-            android:id="@+id/ivCardview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/perro"
-            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_left1"
             >
-            <ImageButton
-                android:id="@+id/ibEmptyBone"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/dog_bone_48"
-                android:layout_marginLeft="@dimen/margin_left3"
-                />
-            <TextView
-                android:id="@+id/tvPetName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_left1"
-                android:text="@string/nombre_mascota"
-                android:textStyle="bold"
-                android:textSize="@dimen/textSize"
-                />
-            <TextView
-                android:id="@+id/tvLikesNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_left2"
-                android:textSize="@dimen/textSize"
-                android:textStyle="bold"
-                android:text="@string/numberOfLikes"
-                />
+
             <ImageView
-                android:id="@+id/ivFullBone"
-                android:layout_width="wrap_content"
+                android:id="@+id/ivCardview"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/dog_bone_48_1"
-                android:layout_marginLeft="@dimen/margin_left3"
+                android:layout_marginTop="@dimen/margin_left1"
+                android:src="@drawable/perro"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageButton
+                    android:id="@+id/ibEmptyBone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/dog_bone_48"
+                    android:layout_marginLeft="@dimen/margin_left3"
+                    android:background="@color/whiteColor"
+                    />
+                <TextView
+                    android:id="@+id/tvPetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left1"
+                    android:text="@string/nombre_mascota"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize"
+                    />
+                <TextView
+                    android:id="@+id/tvLikesNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left2"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold"
+                    android:text="@string/numberOfLikes"
+                    />
+                <ImageView
+                    android:id="@+id/ivFullBone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dog_bone_48_1"
+                    android:layout_marginLeft="@dimen/margin_left3"
+                    />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 </android.support.v7.widget.CardView>
