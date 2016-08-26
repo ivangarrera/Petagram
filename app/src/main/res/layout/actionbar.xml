@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,5 +8,30 @@
     android:elevation="@dimen/elevation_actionbar"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:theme="@style/ThemeOverlay.AppCompat.Light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvPetagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreApp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_mitad"
+            android:textSize="20sp"
+            />
+        <ImageButton
+            android:id="@+id/ibStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left4"
+            android:src="@drawable/star_48"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:background="@color/colorPrimary"
+            />
 
+    </LinearLayout>
 </android.support.v7.widget.Toolbar>
